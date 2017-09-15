@@ -1,6 +1,6 @@
 
 
-
+@import 'templates/_badge';
 
 .zz-class-list__name {
   color: green;
@@ -22,7 +22,28 @@
 .zz-class-list__button{
   background-color: #eaeaea;
   color:slategrey;
-  vertical-align: top;
-  height:100%;
+
 }
 
+.zz-nav__badge {
+  @extend .zz-badge;
+  padding:0.3em;
+  box-sizing: content-box;
+  background-color: #0c3d5d;
+}
+
+.zz-nav__badge--adjust {
+  display: flex;
+}
+
+
+
+@media  (max-width:640px){
+/*radical resizing of all elements!
+i tried just to do it in a and span but that didnt work*/
+  * {
+    font-size: 0.95em;
+  }
+
+
+}
